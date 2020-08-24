@@ -36,6 +36,7 @@ export default function App() {
     <>
       <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
       <SafeAreaView style={styles.container}>
+        <Text style={styles.title}>Repositorios</Text>
         <FlatList
           data={repositories}
           showsHorizontalScrollIndicator={false}
@@ -88,9 +89,18 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  title: {
+    marginTop: 20,
+    marginBottom: 20,
+    color: '#FFF',
+    fontSize: 30,
+    fontWeight: 'bold'
+  },
   container: {
     flex: 1,
     backgroundColor: "#7159c1",
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   repositoryContainer: {
     marginBottom: 15,
